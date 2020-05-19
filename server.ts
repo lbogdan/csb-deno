@@ -8,5 +8,7 @@ const s = serve({ port });
 console.log(`listening on http://localhost:${port}/ ...`);
 
 for await (const req of s) {
-  req.respond({ body: 'Hello, Deno in CodeSandbox!\n' });
+  req.respond({
+    body: `Hello, Deno (${JSON.stringify(Deno.version)}) in CodeSandbox!\n`,
+  });
 }
