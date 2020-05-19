@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "start": "DENO_DIR=$PWD/.deno deno run --allow-env --allow-net server.ts"
+  }
+}
