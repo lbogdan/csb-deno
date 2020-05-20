@@ -1,0 +1,9 @@
+{
+  "watch": [
+    "src/"
+  ],
+  "deno_args": [
+    "--allow-env",
+    "--allow-net"
+  ]
+}
